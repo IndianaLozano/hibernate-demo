@@ -28,6 +28,11 @@ public class Movie implements Serializable {
     )
     private Set<Genre> genres = Collections.emptySet();
 
+
+    @ManyToOne
+    @JoinColumn(name = "director")
+    private Director director;
+
     public Integer getId() {
         return id;
     }
@@ -66,6 +71,14 @@ public class Movie implements Serializable {
 
     public void setGenres(Set<Genre> genres) {
         this.genres = genres;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirectors(Director director) {
+        this.director = director;
     }
 
     @Override
