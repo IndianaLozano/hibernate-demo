@@ -28,7 +28,7 @@ public class Movie implements Serializable {
     )
     private Set<Genre> genres = Collections.emptySet();
 
-
+    // TODO: esto está bien? Cómo lo compruebo?
     @ManyToOne
     @JoinColumn(name = "director")
     private Director director;
@@ -88,7 +88,8 @@ public class Movie implements Serializable {
                 ", title='" + title + '\'' +
                 ", year=" + year +
                 ", creationUser='" + creationUser + '\'' +
+                ", genres=" + genres +
+                ", director=" + director +
                 '}';
     }
-
 }

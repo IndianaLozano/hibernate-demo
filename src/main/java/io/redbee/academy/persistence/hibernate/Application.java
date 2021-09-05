@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public class Application {
 
-    // TODO Qué hace el logger factory acá?
+    // TODO Qué hace el logger factory acá? No entiendo bien...
     private static final Logger LOGGER = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
